@@ -12,7 +12,6 @@ const renderTodoListPage = async () => {
   const $app = document.getElementById("app");
   $app.innerHTML = "";
   const response = await getRequest();
-  console.log(`main.js_response: `, response);
   const initialState = await response.map(({ feel, isComplete, text, _id }) => {
     return { feel, isComplete, text, _id };
   });

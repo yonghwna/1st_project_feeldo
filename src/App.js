@@ -23,13 +23,12 @@ export default function App({
   todoListWrapper.className = "todo-list";
   container.appendChild(todoListWrapper);
 
-  // bottomMenu 생성
-  const bottomMenu = document.createElement("div");
-  bottomMenu.className = "bottomMenu";
-
   // inputWrapper 생성 얘랑
   const inputWrapper = document.createElement("div");
   inputWrapper.className = "inputWrapper";
+  // bottomMenu 생성
+  const bottomMenu = document.createElement("div");
+  bottomMenu.className = "bottomMenu";
 
   // 이미지 생성
   const img = document.createElement("img");

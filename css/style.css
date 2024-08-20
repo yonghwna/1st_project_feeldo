@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  background-color: #b9d7fc;
+  background-color: #6484d8;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -36,6 +36,7 @@ body {
   padding: 0px 8px 8px 8px;
   overflow-y: auto; /* 스크롤은 todo-list 내부에서만 발생하도록 설정 */
   -webkit-margin-after: 100px;
+  padding-bottom: 30px;
 }
 .todo-list::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Webkit browsers */
@@ -104,7 +105,7 @@ body {
 }
 .bottomMenu {
   padding: auto;
-  /* position: fixed; */
+  position: fixed;
   bottom: 0;
   box-sizing: border-box;
   width: 100%;

@@ -1,36 +1,43 @@
 .login-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  padding: 20px;
   background-color: #f5faff;
+  max-width: 430px;
 }
 
 .login-form {
-  width: 100%;
-  max-width: 300px;
-  margin-top: 50px;
+  margin-top: 200px;
+  display: flex;
+  width: 300px;
+  height: 150px;
+  gap: 11;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 .login-input {
-  width: 100%;
+  width: 80%;
   padding: 15px;
   margin-bottom: 15px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   font-size: 16px;
   outline: none;
+  box-sizing: border-box;
 }
-
+.login-input::placeholder {
+  color: #e0e0e0;
+}
 .login-input:focus {
   border-color: #b9d7fc;
 }
 
 .login-button {
-  width: 100%;
+  width: 60%;
   padding: 15px;
-  background-color: #b9d7fc;
+  background-color: #6484d8;
   color: white;
   border: none;
   border-radius: 8px;
@@ -58,4 +65,14 @@
 .login-options .divider {
   margin: 0 10px;
   color: #e0e0e0;
+}
+.loginHeader {
+  background-color: #6484d8;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  width: 100%;
+  bottom: 100px;
 }

@@ -7,16 +7,20 @@ export default function LoginPage({ $target, navigateTo }) {
   //   };
   $input.innerHTML = `
   <div class="container login-container">
-         <div class="header">
-             로그인
-         </div>
-         <div class="login-form">
-             <input id="userCode" type="text" class="login-input" placeholder="user_code">
-             
-             <button id="loginButton" type="button class="login-button">로그인</button>
-         </div>
-         
-     </div>
+  <header class="loginHeader">FEELDO</header>
+  <div class="login-form">
+    <input
+      id="userCode"
+      type="text"
+      class="login-input"
+      placeholder="code"
+    />
+
+    <button id="loginButton" type="button" class="login-button">
+      계획 세우기
+    </button>
+  </div>
+</div>
    `;
   document.getElementById("loginButton").addEventListener("click", () => {
     const userCode = document.getElementById("userCode").value;
