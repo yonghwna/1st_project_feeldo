@@ -32,7 +32,7 @@ export default function App({
 
   // 이미지 생성
   const img = document.createElement("img");
-  img.src = "https://yonghwna.github.io/1st_project_feeldo/asset/plus.svg";
+  img.src = "./asset/plus.svg";
   console.log(img.src);
   img.alt = "";
   inputWrapper.appendChild(img);
