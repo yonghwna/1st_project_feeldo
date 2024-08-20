@@ -30,15 +30,13 @@ export default function TodoList({
   /**데이터에 따라 다른 todo리턴 */
   const listComponent = ({ _id, feel, isComplete, text }) => {
     if (isComplete) {
-      return `<li data-id="${_id}" class="todo-item completed"><img class="todoCheck" src="image
-      /circle-check.svg" alt="" />
+      return `<li data-id="${_id}" class="todo-item completed"><img class="todoCheck" src="image/circle-check.svg" alt="" />
       <span class="todoText">${text}</span><span class="emozi">${returnFillIcon(
         feel
       )}</span><span class="todoDelete" >🗑️</span></li>`;
     } else {
       return `<li data-id="${_id}" class="todo-item">
-      <img class="todoCheck" src="image
-      /circle.svg" alt="" />
+      <img class="todoCheck" src="image/circle.svg" alt="" />
       <span class="todoText">${text}</span><span class="emozi">${returnFillIcon(
         feel
       )}</span><span class="todoDelete" >🗑️</span></li>`;
