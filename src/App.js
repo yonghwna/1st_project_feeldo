@@ -8,12 +8,53 @@ export default function App({
   update,
   remove,
 }) {
-  const $app = document.createElement("div");
-  /*todoList */
-  const $list = document.getElementsByClassName("todo-list")[0];
-  /*input,select wrapper */
-  const $inputWrapper = document.getElementsByClassName("inputWrapper")[0];
-  $target.appendChild($app);
+  // 컨테이너 생성
+  const container = document.createElement("div");
+  container.className = "container";
+
+  // 헤더 생성
+  const header = document.createElement("header");
+  header.className = "header";
+  header.textContent = "FEELDO";
+  container.appendChild(header);
+
+  // todo-list 생성 얘
+  const todoListWrapper = document.createElement("ul");
+  todoListWrapper.className = "todo-list";
+  container.appendChild(todoListWrapper);
+
+  // bottomMenu 생성
+  const bottomMenu = document.createElement("div");
+  bottomMenu.className = "bottomMenu";
+
+  // inputWrapper 생성 얘랑
+  const inputWrapper = document.createElement("div");
+  inputWrapper.className = "inputWrapper";
+
+  // 이미지 생성
+  const img = document.createElement("img");
+  img.src = "asset/plus.svg";
+  img.alt = "";
+  inputWrapper.appendChild(img);
+
+  // inputWrapper를 bottomMenu에 추가
+  bottomMenu.appendChild(inputWrapper);
+
+  // bottomMenu를 container에 추가
+  container.appendChild(bottomMenu);
+
+  // 최종적으로 container를 body에 추가
+  document.body.appendChild(container);
+
+  //   /*todoList */
+  //   const $list = document.getElementsByClassName("todo-list")[0];
+  //   /*input,select wrapper */
+  //   const $inputWrapper = document.getElementsByClassName("inputWrapper")[0];
+  // /**list, inputWrapper를 밖에서 가져와서 넣고있다.
+  //  * 여기서 만든다음 타겟안에 넣고
+  //  * 밑에서 innerHtml로 추가해야함.
+  //  */
+
   this.state = initialState;
   this.setState = (nextState) => {
     this.state = nextState;
@@ -21,7 +62,7 @@ export default function App({
   };
   /**배열리스트를 받아서 리스트를 그릴 컴포넌트 */
   const todoList = new TodoList({
-    $target: $list,
+    $target: todoListWrapper,
     initialState: initialState,
     onClickTrashBox: (id) => {
       remove(id) // post 요청 보내기
@@ -50,7 +91,7 @@ export default function App({
   });
   /**데이터를 입력해서 crud를 하는 컴포넌트*/
   const todoInput = new TodoInput({
-    $target: $inputWrapper,
+    $target: inputWrapper,
     initialState,
     onSubmit: (body) => {
       post(body) // post 요청 보내기

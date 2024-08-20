@@ -59,12 +59,16 @@ export default function TodoList({
         if (e.target.classList.contains("todoText")) {
           const todo = this.state.filter((v) => v._id == id)[0];
           const currentText = todo.text;
-
+          const currentDifficulty = todo.feel;
+          console.log(
+            "🚀 ~ document.querySelector ~ currentDifficulty:",
+            currentDifficulty
+          );
           //input만들고 타입, 텍스트, 클래스 지정
           const inputWrapper = document.createElement("form");
           inputWrapper.className = "add-todo-form";
           inputWrapper.innerHTML = `   <input class="add-todo-input" name="todo" type="text" value="${currentText}" placeholder="ADD TODO" required />
-          <select class="add-todo-select" name="difficulty" id="">
+          <select class="add-todo-select" selected="trivial" name="difficulty" id="">
             <option value="easy">쉬움&nbsp;&nbsp;😙</option>
             <option value="challenge">어려움&nbsp;&nbsp;😏</option>
             <option value="trivial">즐거움&nbsp;&nbsp;😉</option>
@@ -94,6 +98,7 @@ export default function TodoList({
 
             const todoTextValue =
               inputWrapper.querySelector("input[name=todo]").value;
+
             const difficultyValue = inputWrapper.querySelector(
               "select[name=difficulty]"
             ).value;
