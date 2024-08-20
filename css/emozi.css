@@ -1,0 +1,9 @@
+.emozi {
+  position: absolute;
+
+  left: 200px;
+  display: inline-block;
+  font-size: 100px; /* 크기를 크게 설정 */
+  transform: rotate(-20deg); /* 비스듬히 눕히기 */
+  opacity: 0.7; /* 약간 흐리게 만들기 */
+}

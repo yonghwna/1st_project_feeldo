@@ -1,0 +1,182 @@
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  overflow: hidden;
+}
+/* 사파리 스크롤 제거 */
+.body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  background-color: #f5faff;
+  max-width: 430px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* 스크롤이 생기지 않도록 설정 */
+}
+
+.header {
+  background-color: #b9d7fc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.todo-list {
+  scroll-behavior: smooth;
+  padding: 0px 8px 8px 8px;
+  overflow-y: auto; /* 스크롤은 todo-list 내부에서만 발생하도록 설정 */
+  -webkit-margin-after: 100px;
+}
+.todo-list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+.todo-item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 10px;
+  margin: 8px 0;
+  border: 1px solid #e0e0e0;
+  user-select: none;
+  /* transition: box-shadow 0.3s ease, border 0.3s ease; */
+  border-radius: 8px;
+  background-color: white;
+  font-size: 18px;
+  /* 유저가 버튼에 오래 손을 머물러도 텍스트 복사가 선택되지 않도록 */
+  -webkit-user-select: none;
+}
+/* .todo-item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d1d1;
+} */
+.todo-item span {
+  margin-left: 10px;
+}
+.in-progress {
+}
+.completed {
+  text-decoration: line-through;
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #d9d9d9;
+  width: 95%;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box; /* padding, border 포함한 width 계산 */
+}
+.add-todo-form {
+  display: flex;
+  width: 100%;
+}
+.add-todo-input {
+  outline: none;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: white;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #35373d;
+  font-weight: 500;
+  caret-color: #d9d9d9;
+  width: 100%;
+}
+.add-todo-input::placeholder {
+  color: #e0e0e0;
+}
+.bottomMenu {
+  padding: auto;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b9d7fc;
+}
+.plus-icon {
+  margin-right: 10px;
+  color: #000000;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  /* PC 환경에서의 스타일 */
+  .bottomMenu {
+    padding: 10px 10px 10px 10px;
+
+    max-width: 430px;
+  }
+  .todo-list {
+    -webkit-margin-after: 0px;
+  }
+  .inputWrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #d9d9d9;
+    font-weight: 600;
+    border: 1px solid #e0e0e0;
+    margin: 0 8px; /* 좌우에만 마진 추가 */
+    bottom: 0;
+    box-sizing: border-box; /* padding, border 포함한 width 계산 */
+  }
+}
+
+.add-todo-select {
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #bfd6fa;
+  background-color: #bfd6fa;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  z-index: 9999;
+}
+
+.todoCheck {
+  width: 30px;
+}
+.todoText {
+  display: flex;
+  flex: 1;
+}
+.todoInput {
+  outline: none;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: white;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #35373d;
+  font-weight: 500;
+  caret-color: #d9d9d9;
+  flex: 1;
+}
+.todoDelete {
+  width: 25px;
+}

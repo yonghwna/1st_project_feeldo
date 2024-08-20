@@ -1,0 +1,55 @@
+.splash-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff9999;
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+.icon:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.icon:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
