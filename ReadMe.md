@@ -30,12 +30,10 @@
 프로그래머스 데브코스에서 한 달간 배운 html, css, js 지식을 총망라하여, 개발의 시작이라고 볼 수 있는 CRUD 구현을 해 보고, 거기에 더해 추가 기능을 구현해 보는것이 이번 프로젝트의 목적입니다.
 
 ### 프로젝트 수행
-
-![image.png](%E1%84%83%E1%85%A6%E1%84%87%E1%85%B3%E1%84%8F%E1%85%A9%E1%84%89%E1%85%B3%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%201%E1%84%92%E1%85%AC%20FEELDO%204b90e30a1d814cab84f219497531fe56/image.png)
+<img width="1541" alt="image" src="https://github.com/user-attachments/assets/f4e7906e-7015-4f70-a2c0-96497c9151fb">
 
 ### 와이어프레임
-
-![image.png](%E1%84%83%E1%85%A6%E1%84%87%E1%85%B3%E1%84%8F%E1%85%A9%E1%84%89%E1%85%B3%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%201%E1%84%92%E1%85%AC%20FEELDO%204b90e30a1d814cab84f219497531fe56/image%201.png)
+<img width="1042" alt="image 1" src="https://github.com/user-attachments/assets/65146645-56d8-4629-8730-250c71e2840d">
 
 ### 프로젝트 수행 도구
 
