@@ -29,7 +29,7 @@
 
 프로그래머스 데브코스에서 한 달간 배운 html, css, js 지식을 총망라하여, 개발의 시작이라고 볼 수 있는 CRUD 구현을 해 보고, 거기에 더해 추가 기능을 구현해 보는것이 이번 프로젝트의 목적입니다.
 
-### 프로젝트 수행
+### WBS
 <img width="1541" alt="image" src="https://github.com/user-attachments/assets/f4e7906e-7015-4f70-a2c0-96497c9151fb">
 
 ### 와이어프레임
