@@ -123,18 +123,6 @@ export default function TodoList({
              */
           });
 
-          /**
-           *
-           *
-           *
-           *
-           * Input을 가로로 꽉차게해서 키우고, option클릭하면 patch되게 해버리자
-           *
-           *
-           *
-           *
-           * */
-
           // blur이벤트 발생하면 li로 바꿔치기 한다는데? blur?
           // input이 focus를 잃는걸 blur라고 함.
 

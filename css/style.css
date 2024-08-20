@@ -63,13 +63,27 @@ body {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #d1d1d1;
 } */
+.todo-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: gray;
+  transition: width 10s ease;
+}
+
+.todo-item.completed::after {
+  width: 100%;
+}
 .todo-item span {
   margin-left: 10px;
 }
 .in-progress {
 }
 .completed {
-  text-decoration: line-through;
+  opacity: 0.7;
 }
 .inputWrapper {
   display: flex;
