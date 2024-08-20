@@ -104,7 +104,7 @@ body {
 }
 .bottomMenu {
   padding: auto;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   box-sizing: border-box;
   width: 100%;

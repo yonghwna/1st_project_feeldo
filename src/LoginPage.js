@@ -11,15 +11,11 @@ export default function LoginPage({ $target, navigateTo }) {
              로그인
          </div>
          <div class="login-form">
-             <input id="userCode" type="text" class="login-input" placeholder="아이디">
+             <input id="userCode" type="text" class="login-input" placeholder="user_code">
              
              <button id="loginButton" type="button class="login-button">로그인</button>
          </div>
-         <div class="login-options">
-             <a href="#" class="forgot-password">비밀번호 찾기</a>
-             <span class="divider">|</span>
-             <a href="#" class="sign-up">회원가입</a>
-         </div>
+         
      </div>
    `;
   document.getElementById("loginButton").addEventListener("click", () => {

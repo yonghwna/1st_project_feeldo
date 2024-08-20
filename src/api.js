@@ -1,6 +1,6 @@
-// const API_END_POINT =
-//   "https://port-0-todo-server-lzyb7pqu6942a3da.sel4.cloudtype.app/todoList";
-const API_END_POINT = "http://localhost:8080/todoList";
+const API_END_POINT =
+  "https://port-0-todo-server-lzyb7pqu6942a3da.sel4.cloudtype.app/todoList";
+// const API_END_POINT = "http://localhost:8080/todoList";
 const returnUrl = (todoId = "") => {
   return `${API_END_POINT}${todoId !== "" ? `/${todoId}` : todoId}`;
 };

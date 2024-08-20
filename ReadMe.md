@@ -42,7 +42,15 @@ https://port-0-todo-server-lzyb7pqu6942a3da.sel4.cloudtype.app/todoList
 
 마주친 문제
 
-알게된 것<br>
+1. history api로 변경된 url에서 유저가 새로고침을 하면 404에러가 뜨는데, html,js만으로는 대응할 수가없다. 서버가 필요.
+   그러다 이걸 깃허브에 배포한다는 사실을 깨달음.
+   혹시 깃허브 pages에 뭔가 설정이 있진 않을까 ?
+   깃허브로 배포된 페이지에서 새로고침하니 404에러가 뜬다.
+   https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
+   그리고 404페이지는 수정 가능하다.
+   그렇다면 404페이지도 todolist로 만들어버리면 어떨까?
+   index.html 내용을 복사해서 404.html로 붙여넣는다.
+   알게된 것<br>
 
 <h3>스크롤이 있는 화면에서 sticky, fixed를 사용하면 성능 및 접근성 문제를 유발할 수 있다.</h3>
 사용자가 스크롤을 할 때마다 sticky, fixed인 요소를 새로운 위치에 repaint해야하는데, 해당 요소가 포함하는 내용의 양, 브라우저 및 기기의 성능에 따라 60fps를 유지하지 못하게 된다.<br>
