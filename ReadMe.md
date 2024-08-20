@@ -33,7 +33,7 @@
 <img width="1541" alt="image" src="https://github.com/user-attachments/assets/f4e7906e-7015-4f70-a2c0-96497c9151fb">
 
 ### 와이어프레임
-<img width="1042" alt="image 1" src="https://github.com/user-attachments/assets/65146645-56d8-4629-8730-250c71e2840d">
+![와이어프레임](https://github.com/user-attachments/assets/4b8ba32c-11dc-4b97-befd-0b326879410c)
 
 ### 프로젝트 수행 도구
 
