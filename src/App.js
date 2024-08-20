@@ -32,7 +32,7 @@ export default function App({
 
   // 이미지 생성
   const img = document.createElement("img");
-  img.src = "asset/plus.svg";
+  img.src = "/asset/plus.svg";
   img.alt = "";
   inputWrapper.appendChild(img);
 

@@ -24,6 +24,13 @@ const renderTodoListPage = async () => {
     update: patchRequest,
     remove: deleteRequest,
   });
+
+  /**뒤로가기 누를 시 현재페이지 유지(로그인창 진입 막기)*/
+  window.history.pushState(null, "", window.location.href);
+
+  window.onpopstate = function () {
+    window.history.pushState(null, "", window.location.href);
+  };
 };
 
 const renderLoginPage = () => {
@@ -64,9 +71,12 @@ export const handleRouting = () => {
     navigateTo("/login");
   }
 };
-// window.addEventListener("popstate", () => {
-//   handleRouting();
-// });
+/**
+ * 쓰레기통 바꾸기
+ * 이모티콘 클릭?
+ * 이모티콘 기본값
+ * 고양이테마
+ */
 
 /**
  * 애니메이션이 끝나면 로그인페이지에서 사용자 코드를 입력받는다. 코드는 로컬 스토리지에 저장한다
