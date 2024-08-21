@@ -32,9 +32,9 @@ export default function App({
 
   // 이미지 생성
   const img = document.createElement("div");
-  // const defaultImageUrl = "https://yonghwna.github.io/FEELDO/image/"
-  const defaultImageUrl = "image/plus.svg";
-  img.innerHTML = `<img class="plus-icon" src="${defaultImageUrl}" alt="" />`;
+  const defaultImageUrl = "https://yonghwna.github.io/FEELDO/image/";
+  // const defaultImageUrl = "image/plus.svg";
+  img.innerHTML = `<img class="plus-icon" src="${defaultImageUrl}plus.svg" alt="" />`;
 
   // img.src = `${defaultImageUrl}image/plus.svg`;
   // console.log(img.src);
