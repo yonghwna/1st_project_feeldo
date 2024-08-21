@@ -30,16 +30,15 @@ export default function App({
   const bottomMenu = document.createElement("div");
   bottomMenu.className = "bottomMenu";
 
-  // 이미지 생성
-  const img = document.createElement("div");
-  const defaultImageUrl = "https://yonghwna.github.io/FEELDO/image/";
-  // const defaultImageUrl = "image/plus.svg";
-  img.innerHTML = `<img class="plus-icon" src="${defaultImageUrl}plus.svg" alt="" />`;
+  // // 이미지 생성
+  // const img = document.createElement("div");
+  // const defaultImageUrl = "https://yonghwna.github.io/FEELDO/image/";
+  // img.innerHTML = `<img class="plus-icon" src="${defaultImageUrl}plus.svg" alt="" />`;
 
-  // img.src = `${defaultImageUrl}image/plus.svg`;
-  // console.log(img.src);
-  // img.alt = "";
-  inputWrapper.appendChild(img);
+  // // img.src = `${defaultImageUrl}image/plus.svg`;
+  // // console.log(img.src);
+  // // img.alt = "";
+  // inputWrapper.appendChild(img);
 
   // inputWrapper를 bottomMenu에 추가
   bottomMenu.appendChild(inputWrapper);
