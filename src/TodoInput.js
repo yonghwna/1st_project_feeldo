@@ -25,7 +25,7 @@ export default function TodoInput({ $target, initialState, onSubmit }) {
       feel: difficultyValue.value,
       isComplete: false,
     };
-    const regex = /^[a-zA-Z가-힣ㄱ-ㅎㅏ-ㅣ\s\?\!\.\,]{1,29}$/;
+    const regex = /^[a-zA-Z가-힣ㄱ-ㅎㅏ-ㅣ\s\?\!\.\,]{1,20}$/;
     if (regex.test(body.text)) {
       onSubmit(body);
       todoTextValue.value = "";
