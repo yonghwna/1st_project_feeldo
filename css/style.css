@@ -167,7 +167,13 @@ body {
     box-sizing: border-box; /* padding, border 포함한 width 계산 */
   }
 }
-
+@media (max-width: 768px) {
+  body {
+    background-size: cover; /* 모바일에서도 이미지를 꽉 채우도록 유지 */
+    background-position: center; /* 중앙에 위치하도록 유지 */
+    height: 100vh; /* 모바일 화면 높이도 100%로 설정 */
+  }
+}
 .add-todo-select {
   padding: 3px;
   font-size: 16px;

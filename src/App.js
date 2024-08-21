@@ -32,7 +32,8 @@ export default function App({
 
   // 이미지 생성
   const img = document.createElement("img");
-  img.src = "image/plus.svg";
+  const defaultImageUrl = "https://yonghwna.github.io/FEELDO/image/";
+  img.src = `${defaultImageUrl}plus.svg`;
   console.log(img.src);
   img.alt = "";
   inputWrapper.appendChild(img);
