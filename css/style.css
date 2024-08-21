@@ -8,6 +8,14 @@ body {
   scrollbar-width: none;
   overflow: hidden;
 }
+.backgroundImage {
+  height: 100vh; /* 화면 전체 높이를 100%로 설정 */
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%); /* 요소를 정중앙으로 이동 */
+  z-index: -9999;
+  position: absolute;
+}
 /* 사파리 스크롤 제거 */
 .body::-webkit-scrollbar {
   display: none;
